@@ -27,4 +27,6 @@
     <string name="login_facebook">Entrar Com Facebook</string>
     <string name="logout">Sair</string>
     <string name="register">Não possui cadastro? Cadastre-se aqui</string>
+    <string name="last_points_format">Última Pontuação %d / 10</string>
+    <string name="init_quiz">Iniciar Quiz</string>
 </resources>
