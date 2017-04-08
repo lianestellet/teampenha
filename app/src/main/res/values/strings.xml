@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Quiz Social</string>
+
+    <string name="title_activity_screen_register_question">Screen register question</string>
+    <string name="text_activity_srq_tittle_question">Tittle question</string>
+    <string name="text_activity_srq_tittle_options">Opções</string>
+    <string name="button_activity_srq_send">Enviar</string>
+
+    <string name="btn_send">Enviar</string>
+
+    <string name="title_activity_main_menu">Menu</string>
+    <string name="action_settings">Configurações</string>
+
+    <string name="button_activity_qr_send">Enviar</string>
+    <string name="save">Salvar</string>
+    <string name="cancel">Cancelar</string>
+
+    <string name="singup">Cadastrar</string>
+    <string name="name">Nome do usuário</string>
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="confirm_password">Confirmar senha</string>
+    <string name="create_account">Cadastrar</string>
+    <string name="already_a_member">Já tem cadastro? Entre aqui</string>
+
+    <string name="login">Entrar</string>
+    <string name="login_facebook">Entrar Com Facebook</string>
+    <string name="logout">Sair</string>
+    <string name="register">Não possui cadastro? Cadastre-se aqui</string>
 </resources>
