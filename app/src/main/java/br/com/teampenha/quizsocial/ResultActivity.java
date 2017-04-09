@@ -1,9 +1,12 @@
 package br.com.teampenha.quizsocial;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Interpolator;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.facebook.share.model.ShareContent;
@@ -12,9 +15,10 @@ import com.facebook.share.widget.ShareButton;
 
 import br.com.teampenha.quizsocial.presenter.ResultPresenter;
 
-public class ResultActivity extends AppCompatActivity {
+public class ResultActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView txtPoints, txtCompartilhar, txtDesafio, txtJogarNovamente;
+    private Button btFinish;
     private ResultPresenter mPresenter;
 
 
@@ -40,7 +44,27 @@ public class ResultActivity extends AppCompatActivity {
         txtCompartilhar = (TextView) findViewById(R.id.compartilhar);
         txtDesafio = (TextView) findViewById(R.id.desafiar);
         txtJogarNovamente = (TextView) findViewById(R.id.jogar_novamente);
+        btFinish = (Button) findViewById(R.id.btn_finish);
+
+        btFinish.setOnClickListener(this);
+        txtJogarNovamente.setOnClickListener(this);
 
         mPresenter = new ResultPresenter();
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.btn_finish:
+                finish();
+                break;
+            case R.id.jogar_novamente:
+                finish();
+                Intent it = new Intent(this, MainActivity.class);
+                startActivity(it);
+                break;
+            default:
+                break;
+        }
     }
 }

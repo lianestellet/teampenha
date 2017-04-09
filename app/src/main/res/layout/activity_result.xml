@@ -6,32 +6,30 @@
     android:gravity="center_horizontal"
     android:layout_margin="@dimen/dimension_16dp">
 
-
     <TextView
         android:id="@+id/content_points"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/shape_circle"
-        android:layout_marginBottom="@dimen/dimension_16dp"
-        android:textColor="@color/primary_material_light_1"
+        android:layout_centerHorizontal="true"
         android:text="10 pts"
         android:gravity="center"
-        android:textSize="@dimen/dimension_30dp"
+        android:background="@drawable/shape_circle"
+        android:layout_marginBottom="@dimen/dimension_16dp"
         android:textStyle="bold"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimension_30dp"/>
 
 
     <TextView
         android:id="@+id/jogar_novamente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/content_points"
         android:layout_centerHorizontal="true"
         android:text="Jogar novamente"
+        android:layout_below="@+id/content_points"
         android:layout_marginBottom="@dimen/dimension_16dp"
         android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/black"
         android:textSize="@dimen/dimension_16dp"/>
 
     <TextView
@@ -43,7 +41,7 @@
         android:text="Compartilhar"
         android:textStyle="bold"
         android:layout_marginBottom="@dimen/dimension_16dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/black"
         android:textSize="@dimen/dimension_16dp"/>
 
     <TextView
@@ -55,7 +53,7 @@
         android:text="Desafiar amigo"
         android:textStyle="bold"
         android:layout_marginBottom="@dimen/dimension_16dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/black"
         android:textSize="@dimen/dimension_16dp"/>
 
     <TextView
@@ -63,10 +61,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/desafiar"
         android:layout_centerHorizontal="true"
-        android:text="Saiba"
+        android:text="Saiba Mais"
         android:textStyle="bold"
         android:layout_marginBottom="@dimen/dimension_16dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/black"
         android:textSize="@dimen/dimension_16dp"/>
 
     <com.facebook.share.widget.ShareButton
@@ -74,5 +72,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:background="@color/white"
+            android:text="@string/finished"/>
+
+    </LinearLayout>
 
 </RelativeLayout>

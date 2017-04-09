@@ -23,6 +23,8 @@
     <string name="create_account">Cadastrar</string>
     <string name="already_a_member">Já tem cadastro? Entre aqui</string>
 
+    <string name="finished">Finalizar</string>
+
     <string name="login">Entrar</string>
     <string name="login_facebook">Entrar Com Facebook</string>
     <string name="logout">Sair</string>
