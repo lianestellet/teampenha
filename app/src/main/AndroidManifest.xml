@@ -18,6 +18,9 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".ResultActivity"></activity>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider830598647090317"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
     </application>
 
 </manifest>
