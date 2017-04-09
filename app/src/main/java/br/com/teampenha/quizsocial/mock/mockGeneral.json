@@ -1,27 +1,11 @@
 [
   {
-    "desc": "Pessoas perdem o emprego no Brasil",
-    "value": 7,
-    "category": "time",
-    "subject": "unemployment",
-    "sourceDesc": "EXAME 2015",
-    "sourceUrl": "http://exame.abril.com.br/revista-exame/a-cada-minuto-7-pessoas-perdem-o-emprego-no-brasil/"
-  },
-  {
-    "desc": "Crescimento do mercado de smartphones",
-    "value": 55,
+    "desc": "Crescimento da compra de smartphones",
+    "value": 9,
     "category": "percent",
     "subject": "market",
-    "sourceDesc": "google",
-    "sourceUrl": "http://www.google.com"
-  },
-  {
-    "desc": "Mortes por acidente de trânsito",
-    "value": 12,
-    "category": "time",
-    "subject": "accident",
-    "sourceDesc": "Jornal Nacional, 2014",
-    "sourceUrl": "http://g1.globo.com/jornal-nacional/noticia/2014/12/acidentes-de-transito-matam-uma-pessoa-cada-12-minutos-no-brasil.html"
+    "sourceDesc": "Estadão Conteúdo, 2015",
+    "sourceUrl": "http://tecnologia.ig.com.br/2016-04-15/crescimento-de-smartphones-no-pais-e-de-9-em-relacao-ao-ano-passado.html"
   },
   {
     "desc": "Diminuição de fumantes em 9 anos",
@@ -46,5 +30,53 @@
     "subject": "politics",
     "sourceDesc": "Instituto Paraná Pesquisas, 2016",
     "sourceUrl": "http://veja.abril.com.br/politica/governo-temer-e-desaprovado-por-55-aponta-pesquisa/"
+  },
+  {
+    "desc": "Taxa de desemprego no Brasil",
+    "value": 12,
+    "category": "percent",
+    "subject": "unemployment",
+    "sourceDesc": "Globo G1, 2017",
+    "sourceUrl": "http://g1.globo.com/economia/noticia/desemprego-fica-em-12-no-4-trimestre-de-2016.ghtml"
+  },
+  {
+    "desc": "Pessoas perdem o emprego no Brasil",
+    "value": 7,
+    "category": "time",
+    "subject": "unemployment",
+    "sourceDesc": "EXAME 2015",
+    "sourceUrl": "http://exame.abril.com.br/revista-exame/a-cada-minuto-7-pessoas-perdem-o-emprego-no-brasil/"
+  },
+  {
+    "desc": "Mortes por acidente de trânsito",
+    "value": 12,
+    "category": "time",
+    "subject": "accident",
+    "sourceDesc": "Jornal Nacional, 2014",
+    "sourceUrl": "http://g1.globo.com/jornal-nacional/noticia/2014/12/acidentes-de-transito-matam-uma-pessoa-cada-12-minutos-no-brasil.html"
+  },
+  {
+    "desc": "Suicídio",
+    "value": 45,
+    "category": "time",
+    "subject": "social",
+    "sourceDesc": "O tempo, 2016",
+    "sourceUrl": "http://www.otempo.com.br/interessa/a-cada-45-minutos-uma-pessoa-se-suicida-no-pa%C3%ADs-1.1320160"
+  },
+  {
+    "desc": "Infecção com HIV",
+    "value": 15,
+    "category": "time",
+    "subject": "health",
+    "sourceDesc": "Portal do Governo, 2016",
+    "sourceUrl": "http://www.saopaulo.sp.gov.br/spnoticias/ultimas-noticias/hiv-aids-a-cada-15-minutos-alguem-e-infectado-no-brasil/"
+  },
+  {
+    "desc": "Morte por problemas cardíacos",
+    "value": 2,
+    "category": "time",
+    "subject": "health",
+    "sourceDesc": "Organização Mundial de Saúde",
+    "sourceUrl": "http://www.uai.com.br/app/noticia/saude/2014/05/20/noticias-saude,192400/a-cada-dois-minutos-uma-pessoa-morre-em-decorrencia-de-problemas-card.shtml"
   }
 ]
