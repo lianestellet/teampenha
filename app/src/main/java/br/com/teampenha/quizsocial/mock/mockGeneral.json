@@ -1,0 +1,114 @@
+[
+  {
+    "desc": "ullamco laboris",
+    "value": 41.85,
+    "category": "percent",
+    "subject": "shoplifting",
+    "sourceDesc": "<SyntaxError: missing ) after argument list> 2010",
+    "sourceUrl": "http://www.something.com"
+  },
+  {
+    "desc": "excepteur culpa",
+    "value": 71.17,
+    "category": "percent",
+    "subject": "market",
+    "sourceDesc": "<SyntaxError: missing ) after argument list> 2011",
+    "sourceUrl": "http://www.something.com"
+  },
+  {
+    "desc": "aute consequat",
+    "value": 13,
+    "category": "time",
+    "subject": "shoplifting",
+    "sourceDesc": "<SyntaxError: missing ) after argument list> 2013",
+    "sourceUrl": "http://www.something.com"
+  },
+  {
+    "desc": "consectetur deserunt",
+    "value": 40.25,
+    "category": "percent",
+    "subject": "traffic accidents",
+    "sourceDesc": "<SyntaxError: missing ) after argument list> 2010",
+    "sourceUrl": "http://www.something.com"
+  },
+  {
+    "desc": "quis amet",
+    "value": 6,
+    "category": "time",
+    "subject": "job",
+    "sourceDesc": "<SyntaxError: missing ) after argument list> 2012",
+    "sourceUrl": "http://www.something.com"
+  },
+  {
+    "desc": "occaecat sit",
+    "value": 11.86,
+    "category": "percent",
+    "subject": "market",
+    "sourceDesc": "<SyntaxError: missing ) after argument list> 2012",
+    "sourceUrl": "http://www.something.com"
+  },
+  {
+    "desc": "mollit occaecat",
+    "value": 7.27,
+    "category": "percent",
+    "subject": "shoplifting",
+    "sourceDesc": "<SyntaxError: missing ) after argument list> 2012",
+    "sourceUrl": "http://www.something.com"
+  },
+  {
+    "desc": "sit ea",
+    "value": 9,
+    "category": "time",
+    "subject": "job",
+    "sourceDesc": "<SyntaxError: missing ) after argument list> 2014",
+    "sourceUrl": "http://www.something.com"
+  },
+  {
+    "desc": "adipisicing tempor",
+    "value": 19,
+    "category": "time",
+    "subject": "traffic accidents",
+    "sourceDesc": "<SyntaxError: missing ) after argument list> 2011",
+    "sourceUrl": "http://www.something.com"
+  },
+  {
+    "desc": "cupidatat tempor",
+    "value": 76.01,
+    "category": "time",
+    "subject": "traffic accidents",
+    "sourceDesc": "<SyntaxError: missing ) after argument list> 2012",
+    "sourceUrl": "http://www.something.com"
+  },
+  {
+    "desc": "tempor magna",
+    "value": 75.47,
+    "category": "percent",
+    "subject": "job",
+    "sourceDesc": "<SyntaxError: missing ) after argument list> 2012",
+    "sourceUrl": "http://www.something.com"
+  },
+  {
+    "desc": "occaecat officia",
+    "value": 15.38,
+    "category": "percent",
+    "subject": "market",
+    "sourceDesc": "<SyntaxError: missing ) after argument list> 2014",
+    "sourceUrl": "http://www.something.com"
+  },
+  {
+    "desc": "nulla magna",
+    "value": 59.16,
+    "category": "percent",
+    "subject": "shoplifting",
+    "sourceDesc": "<SyntaxError: missing ) after argument list> 2014",
+    "sourceUrl": "http://www.something.com"
+  },
+  {
+    "desc": "nostrud enim",
+    "value": 2,
+    "category": "time",
+    "subject": "job",
+    "sourceDesc": "<SyntaxError: missing ) after argument list> 2013",
+    "sourceUrl": "http://www.something.com"
+  }
+]
