@@ -16,8 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".ResultActivity"/>
         <provider android:authorities="com.facebook.app.FacebookContentProvider830598647090317"
             android:name="com.facebook.FacebookContentProvider"
             android:exported="true"/>

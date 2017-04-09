@@ -1,5 +1,6 @@
 package br.com.teampenha.quizsocial;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
+import br.com.teampenha.quizsocial.model.Question;
 import br.com.teampenha.quizsocial.mvp.MvpMainPresenter;
 import br.com.teampenha.quizsocial.mvp.MvpMainView;
 import br.com.teampenha.quizsocial.presenter.MainPresenter;
@@ -69,8 +73,14 @@ public class MainActivity extends AppCompatActivity implements MvpMainView {
     }
 
     @Override
-    public void showNextActivity() {
-        Intent it = new Intent();
+    public void startNewQuiz(ArrayList<Question> questions) {
+        Bundle bundle = new Bundle();
+        bundle.putParcelableArrayList(QuizActivity.QUESTION_BUNDLE_KEY, questions);
+
+        Context context = this;
+        Intent it = new Intent(context, QuizActivity.class);
+        it.putExtras(bundle);
+
         startActivity(it);
     }
 

@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Quiz Social</string>
 
-    <string name="title_activity_screen_register_question">Screen register question</string>
-    <string name="text_activity_srq_tittle_question">Tittle question</string>
+    <string name="title_activity_screen_register_question">Screen register alternativeQuestion</string>
+    <string name="text_activity_srq_tittle_question">Tittle alternativeQuestion</string>
     <string name="text_activity_srq_tittle_options">Opções</string>
     <string name="button_activity_srq_send">Enviar</string>
 
@@ -29,4 +29,6 @@
     <string name="register">Não possui cadastro? Cadastre-se aqui</string>
     <string name="last_points_format">Última Pontuação %d / 10</string>
     <string name="init_quiz">Iniciar Quiz</string>
+    <string name="greather_than">Qual o maior percentual?</string>
+    <string name="less_than">Qual o menor percentual?</string>
 </resources>
