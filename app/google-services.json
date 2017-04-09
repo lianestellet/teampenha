@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "441562424528",
+    "firebase_url": "https://elanaoquiz.firebaseio.com",
+    "project_id": "elanaoquiz",
+    "storage_bucket": "elanaoquiz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441562424528:android:0ab9bb55ac60846e",
+        "android_client_info": {
+          "package_name": "br.com.teampenha.quizsocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441562424528-jch06pvl9e8p6ufaabhfi3n0vd6tuhqj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3kul0IqYnSQA1E4Z9EsntpT4eFHnz5dg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
