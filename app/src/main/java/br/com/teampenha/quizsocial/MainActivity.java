@@ -88,4 +88,9 @@ public class MainActivity extends AppCompatActivity implements MvpMainView {
     public void logOffFacebook() {
 
     }
+
+    public void goQuiz(View v) {
+        Intent i = new Intent(this, ResultActivity.class);
+        startActivity(i);
+    }
 }

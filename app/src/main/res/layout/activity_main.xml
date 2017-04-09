@@ -21,7 +21,8 @@
         android:textColor="@color/white"
         android:layout_centerInParent="true"
         android:background="@color/colorPrimaryDark"
-        android:enabled="false"/>
+        android:enabled="false"
+        android:onClick="goQuiz" />
 
     <LinearLayout
         android:id="@+id/linear_progress"

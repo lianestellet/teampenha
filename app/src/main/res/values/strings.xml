@@ -31,4 +31,5 @@
     <string name="init_quiz">Iniciar Quiz</string>
     <string name="greather_than">Qual o maior percentual?</string>
     <string name="less_than">Qual o menor percentual?</string>
+    <string name="facebook_app_id">830598647090317</string>
 </resources>
