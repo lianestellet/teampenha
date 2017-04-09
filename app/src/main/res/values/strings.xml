@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Quiz Social</string>
+    <string name="app_name">Ela Não Quiz!</string>
 
     <string name="title_activity_screen_register_question">Screen register alternativeQuestion</string>
     <string name="text_activity_srq_tittle_question">Tittle alternativeQuestion</string>

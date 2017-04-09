@@ -33,33 +33,10 @@
         android:textSize="@dimen/dimension_16dp"/>
 
     <TextView
-        android:id="@+id/compartilhar"
+        android:id="@+id/saibaMais"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/jogar_novamente"
-        android:text="Compartilhar"
-        android:textStyle="bold"
-        android:layout_marginBottom="@dimen/dimension_16dp"
-        android:textColor="@color/black"
-        android:textSize="@dimen/dimension_16dp"/>
-
-    <TextView
-        android:id="@+id/desafiar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/compartilhar"
-        android:text="Desafiar amigo"
-        android:textStyle="bold"
-        android:layout_marginBottom="@dimen/dimension_16dp"
-        android:textColor="@color/black"
-        android:textSize="@dimen/dimension_16dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/desafiar"
+        android:layout_below="@id/jogar_novamente"
         android:layout_centerHorizontal="true"
         android:text="Saiba Mais"
         android:textStyle="bold"
@@ -71,7 +48,8 @@
         android:id="@+id/shareButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp" />
+        android:layout_below="@id/saibaMais"
+        android:layout_centerHorizontal="true"/>
 
     <LinearLayout
         android:layout_width="match_parent"
