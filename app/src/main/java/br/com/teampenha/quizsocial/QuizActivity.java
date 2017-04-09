@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +26,7 @@ public class QuizActivity extends AppCompatActivity implements MvpQuizView {
     private TextView mAlternativeTwoTextView;
 
     private TextView mTitle;
+    private ImageView img1, img2, img3;
 
     private MvpQuizPresenter mPresenter;
 
@@ -35,6 +38,10 @@ public class QuizActivity extends AppCompatActivity implements MvpQuizView {
         View layoutTitle = findViewById(R.id.layout_title);
         View layoutOne = findViewById(R.id.layout_question_one);
         View layoutTwo = findViewById(R.id.layout_question_two);
+
+        img1 = (ImageView) findViewById(R.id.imageView);
+        img2 = (ImageView) findViewById(R.id.imageView2);
+        img3 = (ImageView) findViewById(R.id.imageView3);
 
         mTitle = (TextView) layoutTitle.findViewById(R.id.txt_title);
         mAlternativeOneTextView = (TextView) layoutOne.findViewById(R.id.txt_question);
@@ -91,6 +98,7 @@ public class QuizActivity extends AppCompatActivity implements MvpQuizView {
     public void finishQuiz() {
         Context context = this;
         Intent it = new Intent(context, ResultActivity.class);
+        it.putExtra("totalPoints", mPresenter.getTotalPoints());
         startActivity(it);
     }
 
@@ -98,11 +106,26 @@ public class QuizActivity extends AppCompatActivity implements MvpQuizView {
     public void showGameOver() {
         // TODO finalizar o jogo
         Toast.makeText(this, "Vocë perdeu todas as vidas", Toast.LENGTH_SHORT).show();
+        finish();
+        Intent intent = new Intent(this, ResultActivity.class);
+        intent.putExtra("totalPoints", mPresenter.getTotalPoints());
+        startActivity(intent);
     }
 
     @Override
     public void updateRemaingLives(int lives) {
         // TODO update nas vidas o jogo
-        Toast.makeText(this, String.format("Vocë tem %d vidas", lives), Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, String.format("Vocë tem %d vidas", lives), Toast.LENGTH_SHORT).show();
+        if (img1.getVisibility() == View.VISIBLE &&
+                img2.getVisibility() == View.VISIBLE &&
+                img3.getVisibility() == View.VISIBLE){
+            img1.setVisibility(View.GONE);
+        } else if (img2.getVisibility() == View.VISIBLE && img1.getVisibility() == View.GONE) {
+            img2.setVisibility(View.GONE);
+        } else {
+            img1.setVisibility(View.GONE);
+            img2.setVisibility(View.GONE);
+            img3.setVisibility(View.GONE);
+        }
     }
 }

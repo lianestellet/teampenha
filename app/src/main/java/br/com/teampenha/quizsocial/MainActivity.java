@@ -144,4 +144,10 @@ public class MainActivity extends AppCompatActivity implements MvpMainView {
 
         return stringBuilder.toString();
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        this.hideProgressBar();
+    }
 }

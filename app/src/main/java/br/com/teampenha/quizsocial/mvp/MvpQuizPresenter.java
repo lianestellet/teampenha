@@ -5,4 +5,5 @@ public interface MvpQuizPresenter {
     void isCorrectAnswer(int alternative);
     void nextQuestion();
     void cancelQuiz();
+    String getTotalPoints();
 }

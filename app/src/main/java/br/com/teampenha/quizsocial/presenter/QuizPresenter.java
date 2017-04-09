@@ -17,6 +17,7 @@ public class QuizPresenter implements MvpQuizPresenter {
 
     private int mCurrentQuestionIndex;
     private int mRemainingLives;
+    public int totalPoints;
 
     public QuizPresenter(MvpQuizView view, List<Question> questions) {
         mMvpView = view;
@@ -54,11 +55,12 @@ public class QuizPresenter implements MvpQuizPresenter {
 
         if (!isCorrect) {
             mRemainingLives--;
+        } else {
+            totalPoints++;
         }
 
-        if (mRemainingLives == 0) {
+        if (mRemainingLives == 1) {
             mMvpView.showGameOver();
-
         } else {
             mMvpView.updateRemaingLives(mRemainingLives);
             mMvpView.animateAnswer();
@@ -98,5 +100,10 @@ public class QuizPresenter implements MvpQuizPresenter {
     @Override
     public void cancelQuiz() {
 
+    }
+
+    @Override
+    public String getTotalPoints() {
+        return "" + totalPoints;
     }
 }

@@ -25,6 +25,8 @@ public class ResultActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
+       String points = getIntent().getStringExtra("totalPoints");
+
         ShareLinkContent content = new ShareLinkContent.Builder()
                 .setContentUrl(Uri.parse("http://www.agenciapatriciagalvao.org.br/dossie/pesquisas/mapa-da-violencia-2015-homicidio-de-mulheres-no-brasil-flacsoopas-omsonu-mulheresspm-2015/"))
                 .setContentDescription("Assassinato de mulheres por familiares")
@@ -35,7 +37,7 @@ public class ResultActivity extends AppCompatActivity implements View.OnClickLis
 
         this.ini();
 
-        txtPoints.setText(mPresenter.getPoint());
+        txtPoints.setText(points);
     }
     public void ini() {
         txtPoints = (TextView) findViewById(R.id.content_points);
@@ -50,13 +52,16 @@ public class ResultActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View view) {
+        Intent it;
         switch (view.getId()){
             case R.id.btn_finish:
                 finish();
+                it = new Intent(this, MainActivity.class);
+                startActivity(it);
                 break;
             case R.id.jogar_novamente:
                 finish();
-                Intent it = new Intent(this, MainActivity.class);
+                it = new Intent(this, QuizActivity.class);
                 startActivity(it);
                 break;
             default:
