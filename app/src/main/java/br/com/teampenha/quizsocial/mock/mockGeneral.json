@@ -1,114 +1,50 @@
 [
   {
-    "desc": "ullamco laboris",
-    "value": 41.85,
-    "category": "percent",
-    "subject": "shoplifting",
-    "sourceDesc": "<SyntaxError: missing ) after argument list> 2010",
-    "sourceUrl": "http://www.something.com"
+    "desc": "Pessoas perdem o emprego no Brasil",
+    "value": 7,
+    "category": "time",
+    "subject": "unemployment",
+    "sourceDesc": "EXAME 2015",
+    "sourceUrl": "http://exame.abril.com.br/revista-exame/a-cada-minuto-7-pessoas-perdem-o-emprego-no-brasil/"
   },
   {
-    "desc": "excepteur culpa",
-    "value": 71.17,
+    "desc": "Crescimento do mercado de smartphones",
+    "value": 55,
     "category": "percent",
     "subject": "market",
-    "sourceDesc": "<SyntaxError: missing ) after argument list> 2011",
-    "sourceUrl": "http://www.something.com"
+    "sourceDesc": "google",
+    "sourceUrl": "http://www.google.com"
   },
   {
-    "desc": "aute consequat",
-    "value": 13,
+    "desc": "Mortes por acidente de trânsito",
+    "value": 12,
     "category": "time",
-    "subject": "shoplifting",
-    "sourceDesc": "<SyntaxError: missing ) after argument list> 2013",
-    "sourceUrl": "http://www.something.com"
+    "subject": "accident",
+    "sourceDesc": "Jornal Nacional, 2014",
+    "sourceUrl": "http://g1.globo.com/jornal-nacional/noticia/2014/12/acidentes-de-transito-matam-uma-pessoa-cada-12-minutos-no-brasil.html"
   },
   {
-    "desc": "consectetur deserunt",
-    "value": 40.25,
+    "desc": "Diminuição de fumantes em 9 anos",
+    "value": 30.7,
     "category": "percent",
-    "subject": "traffic accidents",
-    "sourceDesc": "<SyntaxError: missing ) after argument list> 2010",
-    "sourceUrl": "http://www.something.com"
+    "subject": "cigarrete",
+    "sourceDesc": "Portal Brasil, 2015",
+    "sourceUrl": "http://www.brasil.gov.br/saude/2015/05/numero-de-fumantes-cai-30-7-nos-ultimos-nove-anos"
   },
   {
-    "desc": "quis amet",
-    "value": 6,
-    "category": "time",
-    "subject": "job",
-    "sourceDesc": "<SyntaxError: missing ) after argument list> 2012",
-    "sourceUrl": "http://www.something.com"
-  },
-  {
-    "desc": "occaecat sit",
-    "value": 11.86,
+    "desc": "Torcedores do time Sport",
+    "value": 39,
     "category": "percent",
-    "subject": "market",
-    "sourceDesc": "<SyntaxError: missing ) after argument list> 2012",
-    "sourceUrl": "http://www.something.com"
+    "subject": "sport",
+    "sourceDesc": "Datamétrica, 2015",
+    "sourceUrl": "http://www.pe.superesportes.com.br/app/noticias/futebol/sport/2016/01/10/noticia_sport,40263/pesquisa-realizada-no-recife-aponta-que-o-sport-e-lider-no-numero-de-torcedores-na-capital.shtml"
   },
   {
-    "desc": "mollit occaecat",
-    "value": 7.27,
+    "desc": "Desaprovação do governo Temer",
+    "value": 55,
     "category": "percent",
-    "subject": "shoplifting",
-    "sourceDesc": "<SyntaxError: missing ) after argument list> 2012",
-    "sourceUrl": "http://www.something.com"
-  },
-  {
-    "desc": "sit ea",
-    "value": 9,
-    "category": "time",
-    "subject": "job",
-    "sourceDesc": "<SyntaxError: missing ) after argument list> 2014",
-    "sourceUrl": "http://www.something.com"
-  },
-  {
-    "desc": "adipisicing tempor",
-    "value": 19,
-    "category": "time",
-    "subject": "traffic accidents",
-    "sourceDesc": "<SyntaxError: missing ) after argument list> 2011",
-    "sourceUrl": "http://www.something.com"
-  },
-  {
-    "desc": "cupidatat tempor",
-    "value": 76.01,
-    "category": "time",
-    "subject": "traffic accidents",
-    "sourceDesc": "<SyntaxError: missing ) after argument list> 2012",
-    "sourceUrl": "http://www.something.com"
-  },
-  {
-    "desc": "tempor magna",
-    "value": 75.47,
-    "category": "percent",
-    "subject": "job",
-    "sourceDesc": "<SyntaxError: missing ) after argument list> 2012",
-    "sourceUrl": "http://www.something.com"
-  },
-  {
-    "desc": "occaecat officia",
-    "value": 15.38,
-    "category": "percent",
-    "subject": "market",
-    "sourceDesc": "<SyntaxError: missing ) after argument list> 2014",
-    "sourceUrl": "http://www.something.com"
-  },
-  {
-    "desc": "nulla magna",
-    "value": 59.16,
-    "category": "percent",
-    "subject": "shoplifting",
-    "sourceDesc": "<SyntaxError: missing ) after argument list> 2014",
-    "sourceUrl": "http://www.something.com"
-  },
-  {
-    "desc": "nostrud enim",
-    "value": 2,
-    "category": "time",
-    "subject": "job",
-    "sourceDesc": "<SyntaxError: missing ) after argument list> 2013",
-    "sourceUrl": "http://www.something.com"
+    "subject": "politics",
+    "sourceDesc": "Instituto Paraná Pesquisas, 2016",
+    "sourceUrl": "http://veja.abril.com.br/politica/governo-temer-e-desaprovado-por-55-aponta-pesquisa/"
   }
 ]
