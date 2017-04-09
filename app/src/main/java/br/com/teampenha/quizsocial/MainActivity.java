@@ -2,12 +2,17 @@ package br.com.teampenha.quizsocial;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import br.com.teampenha.quizsocial.model.Question;
@@ -41,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements MvpMainView {
         mStartNewQuizButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mPresenter.startNewQuiz();
+                new QuestionTask().execute();
             }
         });
     }
@@ -92,5 +97,51 @@ public class MainActivity extends AppCompatActivity implements MvpMainView {
     public void goQuiz(View v) {
         Intent i = new Intent(this, ResultActivity.class);
         startActivity(i);
+    }
+
+    private class QuestionTask extends AsyncTask<Void, Void, ArrayList<Question>> {
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            mPresenter.startLoadingProcess();
+        }
+
+        @Override
+        protected ArrayList<Question> doInBackground(Void... params) {
+
+            final String womanJson = readFileFromRawDirectory(R.raw.woman_questions);
+            final String generalJson = readFileFromRawDirectory(R.raw.general_questions);
+
+            try {
+                return mPresenter.loadQuestions(womanJson, generalJson);
+            } catch (IOException e) {
+                return new ArrayList<>();
+            }
+        }
+
+        @Override
+        protected void onPostExecute(ArrayList<Question> questions) {
+            super.onPostExecute(questions);
+            mPresenter.startNewQuiz(questions);
+        }
+    }
+
+    private String readFileFromRawDirectory(int resourceId){
+        InputStream iStream = getResources().openRawResource(resourceId);
+        InputStreamReader inputReader = new InputStreamReader(iStream);
+        BufferedReader bufferedReader = new BufferedReader(inputReader);
+
+        String line;
+        StringBuilder stringBuilder = new StringBuilder();
+
+        try {
+            while ( (line = bufferedReader.readLine()) != null) {
+                stringBuilder.append(line);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return stringBuilder.toString();
     }
 }

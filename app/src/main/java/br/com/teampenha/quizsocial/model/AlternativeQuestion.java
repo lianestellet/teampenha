@@ -3,17 +3,57 @@ package br.com.teampenha.quizsocial.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class AlternativeQuestion implements Parcelable{
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
     public enum Category {
-        FREQUENCY,
-        PERCENT,
-        NUMERIC
+        FREQUENCY("time"),
+        PERCENT("percent");
+        //NUMERIC("numeric");
+
+        private final String mFormatted;
+
+        Category(String formatted) {
+            mFormatted = formatted;
+        }
+
+        @JsonCreator
+        public static Category fromString(String categoryStr) {
+            Category category = null;
+            switch (categoryStr) {
+                case "time":
+                    category = FREQUENCY;
+                    break;
+                case "percent":
+                    category = PERCENT;
+                    break;
+                /*case "numeric":
+                    category = NUMERIC;
+                    break;*/
+            }
+
+            return category;
+        }
     }
 
+    @JsonProperty("desc")
     private String mDescription;
+
+    @JsonProperty("value")
     private double mValue;
+
+    @JsonProperty("category")
     private Category mCategory;
+
+    public AlternativeQuestion() {
+
+    }
 
     public AlternativeQuestion(String mDescription, double mValue, Category mCategory) {
         this.mDescription = mDescription;
