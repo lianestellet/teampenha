@@ -12,7 +12,7 @@
     <color name="bg_msg_you">#5eb964</color>
     <color name="bg_msg_from">#e5e7eb</color>
 
-    <color name="lblFromName">#777777</color>
+    <color name="lblFromName">#ffffff</color>
 
     <color name="bg_msg_input">#e8e8e8</color>
     <color name="text_msg_input">#626262</color>

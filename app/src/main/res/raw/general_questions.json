@@ -1,7 +1,7 @@
 [
   {
     "desc": "Crescimento da compra de smartphones",
-    "value": 9,
+    "value": 0,
     "category": "percent",
     "subject": "market",
     "sourceDesc": "Estadão Conteúdo, 2015",
@@ -9,7 +9,7 @@
   },
   {
     "desc": "Diminuição de fumantes em 9 anos",
-    "value": 30.7,
+    "value": 0,
     "category": "percent",
     "subject": "cigarrete",
     "sourceDesc": "Portal Brasil, 2015",
@@ -17,7 +17,7 @@
   },
   {
     "desc": "Torcedores do time Sport",
-    "value": 39,
+    "value": 0,
     "category": "percent",
     "subject": "sport",
     "sourceDesc": "Datamétrica, 2015",
@@ -25,7 +25,7 @@
   },
   {
     "desc": "Desaprovação do governo Temer",
-    "value": 55,
+    "value": 0,
     "category": "percent",
     "subject": "politics",
     "sourceDesc": "Instituto Paraná Pesquisas, 2016",
@@ -33,7 +33,7 @@
   },
   {
     "desc": "Taxa de desemprego no Brasil",
-    "value": 12,
+    "value": 0,
     "category": "percent",
     "subject": "unemployment",
     "sourceDesc": "Globo G1, 2017",
@@ -41,7 +41,7 @@
   },
   {
     "desc": "Pessoas perdem o emprego no Brasil",
-    "value": 7,
+    "value": 0,
     "category": "time",
     "subject": "unemployment",
     "sourceDesc": "EXAME 2015",
@@ -49,7 +49,7 @@
   },
   {
     "desc": "Mortes por acidente de trânsito",
-    "value": 12,
+    "value": 0,
     "category": "time",
     "subject": "accident",
     "sourceDesc": "Jornal Nacional, 2014",
@@ -57,7 +57,7 @@
   },
   {
     "desc": "Suicídio",
-    "value": 45,
+    "value": 0,
     "category": "time",
     "subject": "social",
     "sourceDesc": "O tempo, 2016",
@@ -65,7 +65,7 @@
   },
   {
     "desc": "Infecção com HIV",
-    "value": 15,
+    "value": 0,
     "category": "time",
     "subject": "health",
     "sourceDesc": "Portal do Governo, 2016",
@@ -73,7 +73,7 @@
   },
   {
     "desc": "Morte por problemas cardíacos",
-    "value": 2,
+    "value": 0,
     "category": "time",
     "subject": "health",
     "sourceDesc": "Organização Mundial de Saúde",

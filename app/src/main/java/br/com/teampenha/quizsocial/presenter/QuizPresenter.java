@@ -17,7 +17,7 @@ public class QuizPresenter implements MvpQuizPresenter {
 
     private int mCurrentQuestionIndex;
     private int mRemainingLives;
-    public int totalPoints;
+    public int totalPoints = 0;
 
     public QuizPresenter(MvpQuizView view, List<Question> questions) {
         mMvpView = view;
@@ -44,9 +44,12 @@ public class QuizPresenter implements MvpQuizPresenter {
     @Override
     public void isCorrectAnswer(int alternative) {
         Question currentQuestion = mQuestions.get(mCurrentQuestionIndex);
-        AlternativeQuestion chosenAlternative = currentQuestion.getAlternativeOne();
+        AlternativeQuestion chosenAlternative = null;
 
-        if (alternative == 2) {
+        if (alternative == 1) {
+            chosenAlternative = currentQuestion.getAlternativeOne();
+        }
+        else if (alternative == 2) {
             chosenAlternative = currentQuestion.getAlternativeTwo();
         }
 
@@ -55,14 +58,14 @@ public class QuizPresenter implements MvpQuizPresenter {
 
         if (!isCorrect) {
             mRemainingLives--;
+            mMvpView.updateRemaingLives(mRemainingLives);
         } else {
-            totalPoints++;
+            this.totalPoints++;
         }
 
-        if (mRemainingLives == 1) {
+        if (mRemainingLives == 0) {
             mMvpView.showGameOver();
         } else {
-            mMvpView.updateRemaingLives(mRemainingLives);
             mMvpView.animateAnswer();
         }
 

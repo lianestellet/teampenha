@@ -53,19 +53,21 @@ public class ResultActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View view) {
         Intent it;
-        switch (view.getId()){
-            case R.id.btn_finish:
-                finish();
-                it = new Intent(this, MainActivity.class);
-                startActivity(it);
-                break;
-            case R.id.jogar_novamente:
-                finish();
-                it = new Intent(this, QuizActivity.class);
-                startActivity(it);
-                break;
-            default:
-                break;
-        }
+        finish();
+        it = new Intent(this, MainActivity.class);
+        startActivity(it);
+//        switch (view.getId()){
+//            case R.id.btn_finish:
+//                finish();
+//                it = new Intent(this, MainActivity.class);
+//                startActivity(it);
+//                break;
+//            case R.id.jogar_novamente:
+//                it = new Intent(this, QuizActivity.class);
+//                startActivity(it);
+//                break;
+//            default:
+//                break;
+//        }
     }
 }

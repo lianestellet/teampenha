@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:text="Última Pontuação - 8/10"/>
+        android:visibility="gone"/>
 
     <Button
         android:id="@+id/btn_start_quiz"
